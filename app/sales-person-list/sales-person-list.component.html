@@ -1,0 +1,21 @@
+<!-- NOTE: directly body has started. -->
+
+<table border="1">
+    <thead>
+        <tr>
+            <th> first name</th>
+            <th> last name </th>
+            <th> email </th>
+            <th> sales volume</th>
+        </tr>        
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempSalesPerson of salesPersonList">
+            <td> {{tempSalesPerson.firstname}}</td>
+            <td> {{tempSalesPerson.lastname}}</td>
+            <td> {{tempSalesPerson.email}}</td>
+            <td> {{tempSalesPerson.salesVolume}}</td>
+        </tr>
+    </tbody>
+</table>
